@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+
+  <style>
+    h3 {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    table {
+      font-family: 'Courier New', Courier, monospace;
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 550px;
+      height: 100px;
+    }
+
+    /*
+    #tableOne .grey {
+      background-color: grey;
+    }
+    */
+
+
+    #tableThree tr td {
+      border: 1px solid black;
+
+    }
+
+    #tableFour td {
+      border: 1px solid black;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .lightgreen {
+      background-color: lightgreen;
+    }
+
+    #tableFive td {
+      border: 1px solid black;
+
+    }
+
+    #tableFive td:nth-child(2) {
+      background-color: lightgreen;
+    }
+
+    #tableFive td:nth-child(4) {
+      background-color: lightgreen;
+    }
+
+    #tableFive td:nth-child(6) {
+      background-color: lightgreen;
+    }
+
+    #tableSix td {
+      border: 1px solid black;
+    }
+
+    #tableSix .green-border {
+      border-width: 5px;
+      border-color: green;
+    }
+
+    #tableSeven,
+    #tableEight,
+    #tableNine,
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    #tableEight,
+    #tableSeven,
+    #tableNine th {
+      text-align: left;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <section class="tables">
+
+    <div class="table-group">
+      <h3>Table One</h3>
+      <table id="tableOne">
+        <tr class="grey">
+          <td>Name</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr class="grey">
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr class="grey">
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-group">
+      <h3>Table Two</h3>
+      <table id="tableTwo">
+        <tr>
+          <th colspan="6">STUDENTS MARK SHEET</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-group">
+      <h3>Table Three</h3>
+      <table id="tableThree">
+        <tr>
+          <th colspan="6">STUDENTS MARK SHEET</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-group">
+      <h3>Table Four</h3>
+      <table id="tableFour">
+        <tr>
+          <th class="green" colspan="6">STUDENTS MARK SHEET</th>
+        </tr>
+        <tr class="lightgreen">
+          <td>Name</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr class="lightgreen">
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr class="lightgreen">
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-group">
+      <h3>Table Five</h3>
+      <table id="tableFive">
+        <tr>
+          <th class="green" colspan="6">STUDENTS MARK SHEET</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </table>
+
+      <div class="table-group">
+        <h3>Table Six</h3>
+        <table id="tableSix">
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td class="green-border"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Table Seven</h3>
+        <table id="tableSeven">
+          <tr>
+            <th>Company</th>
+            <th>Model</th>
+          </tr>
+
+          <tr>
+            <td>Dodge</td>
+            <td>Challanger</td>
+          </tr>
+
+          <tr>
+            <td>Maruti</td>
+            <td>Swift</td>
+          </tr>
+
+          <tr>
+            <td>Jeep</td>
+            <td>Wrangler</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Ford</td>
+            <td>Fusion</td>
+          </tr>
+
+          <tr>
+            <td>Fiesta</td>
+          </tr>
+
+          <tr>
+            <td>Escape</td>
+          </tr>
+
+          <tr>
+            <td>BMW</td>
+            <td>BMW 5 Series</td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Table Eight</h3>
+        <table id="tableEight">
+          <tr>
+            <th>Company</th>
+            <th>Model</th>
+          </tr>
+
+          <tr>
+            <td>Dodge</td>
+            <td>Challanger</td>
+          </tr>
+
+          <tr>
+            <td>Maruti</td>
+            <td>Swift</td>
+          </tr>
+
+          <tr>
+            <td>Jeep</td>
+            <td>Wrangler</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">All these car company names and their model names are ollerted from the ínternet. You can
+              change Company and model name as per your choice.
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>BMW</td>
+            <td>BMW 5 Series</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
